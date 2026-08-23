@@ -7,9 +7,7 @@
       "tflint": "0.50.3"
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/python:1": {}
   },
-  "postCreateCommand": "npm install; pip3 install --break-system-packages checkov; gh auth setup-git 2>/dev/null || true",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -18,8 +16,6 @@
         "hashicorp.terraform",
         "ms-azuretools.vscode-docker",
         "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "bridgecrew.checkov"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -28,5 +24,4 @@
       }
     }
   },
-  "forwardPorts": [3000, 4000]
 }
